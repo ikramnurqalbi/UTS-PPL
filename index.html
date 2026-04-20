@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio PPL PPG BK - 3 Siklus</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar Simpel -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="font-bold text-xl text-teal-600 flex items-center gap-2">
+                    <i class="fa-solid fa-hands-holding-child"></i> Portofolio BK
+                </div>
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#profil" class="text-gray-600 hover:text-teal-600 font-medium transition">Profil</a>
+                    <a href="#artefak" class="text-gray-600 hover:text-teal-600 font-medium transition">Artefak</a>
+                    <a href="#refleksi" class="text-gray-600 hover:text-teal-600 font-medium transition">Refleksi</a>
+                    <a href="#galeri" class="text-gray-600 hover:text-teal-600 font-medium transition">Galeri</a>
+                </div>
+                <!-- Tombol Menu Mobile -->
+                <button id="mobile-btn" class="md:hidden text-gray-600 text-xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden bg-white border-b border-gray-200 px-4 py-4 space-y-3 md:hidden shadow-lg">
+            <a href="#profil" class="block text-gray-600 font-medium">Profil</a>
+            <a href="#artefak" class="block text-gray-600 font-medium">Artefak</a>
+            <a href="#refleksi" class="block text-gray-600 font-medium">Refleksi</a>
+            <a href="#galeri" class="block text-gray-600 font-medium">Galeri</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header class="bg-teal-50 py-16 md:py-24 text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <span class="bg-teal-100 text-teal-700 px-4 py-1 rounded-full text-xs font-bold tracking-wider uppercase">Program PPG 2024</span>
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mt-6 mb-4">E-Portfolio Bimbingan & Konseling</h1>
+            <p class="text-gray-600 text-lg mb-8 leading-relaxed">Rekam jejak digital pelaksanaan Praktik Pengalaman Lapangan (PPL) untuk Siklus I, II, dan III.</p>
+            <a href="#artefak" class="bg-teal-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-teal-700 transition shadow-md inline-block">Mulai Jelajahi</a>
+        </div>
+    </header>
+
+    <!-- Profil -->
+    <section id="profil" class="py-20 bg-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">Profil Mahasiswa</h2>
+                <div class="w-12 h-1 bg-teal-500 mx-auto mt-2"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-10 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300" alt="Foto Profil" class="w-48 h-48 object-cover rounded-2xl shadow-lg">
+                
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-gray-800">[Nama Lengkap Anda], S.Pd.</h3>
+                    <p class="text-teal-600 font-semibold mb-6 italic">Mahasiswa PPG Program Studi BK</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-id-badge text-teal-500"></i>
+                            <span>NIM: [Masukkan NIM]</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-university text-teal-500"></i>
+                            <span>LPTK: Universitas [Nama]</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-school text-teal-500"></i>
+                            <span>Mitra: [Nama Sekolah]</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-teal-500"></i>
+                            <span>Email: [Email Anda]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artefak (3 Siklus) -->
+    <section id="artefak" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Artefak Pelaksanaan PPL</h2>
+                <div class="w-12 h-1 bg-teal-500 mx-auto mt-2"></div>
+            </div>
+
+            <!-- Siklus 1 -->
+            <div class="mb-16">
+                <h3 class="text-xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                    <span class="bg-teal-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                    Siklus I: Layanan Klasikal
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-file-lines text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">RPL Klasikal</h4>
+                        <p class="text-xs text-gray-500 mb-4">Perencanaan layanan bimbingan di dalam kelas.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Unduh File</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-chalkboard text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">Media & LKPD</h4>
+                        <p class="text-xs text-gray-500 mb-4">Materi pendukung dan lembar kerja siswa.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Unduh File</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-circle-play text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">Video Praktik</h4>
+                        <p class="text-xs text-gray-500 mb-4">Rekaman aksi nyata Siklus I.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Lihat Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Siklus 2 -->
+            <div class="mb-16">
+                <h3 class="text-xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                    <span class="bg-teal-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
+                    Siklus II: Konseling Individu / Kelompok
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-user-group text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">RPL Konseling</h4>
+                        <p class="text-xs text-gray-500 mb-4">Rencana layanan responsif individual.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Unduh File</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-clipboard-check text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">Instrumen Evaluasi</h4>
+                        <p class="text-xs text-gray-500 mb-4">Hasil asesmen proses dan hasil layanan.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Unduh File</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-circle-play text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">Video Praktik</h4>
+                        <p class="text-xs text-gray-500 mb-4">Rekaman aksi nyata Siklus II.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Lihat Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Siklus 3 -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                    <span class="bg-teal-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span>
+                    Siklus III: Layanan Peminatan / Konferensi Kasus
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-briefcase text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">RPL Siklus III</h4>
+                        <p class="text-xs text-gray-500 mb-4">Rencana untuk layanan peminatan karir/akademik.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Unduh File</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-users-viewfinder text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">Laporan Kegiatan</h4>
+                        <p class="text-xs text-gray-500 mb-4">Analisis data dan laporan akhir siklus III.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Unduh File</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition group">
+                        <i class="fa-solid fa-circle-play text-3xl text-teal-500 mb-4"></i>
+                        <h4 class="font-bold mb-2">Video Praktik</h4>
+                        <p class="text-xs text-gray-500 mb-4">Rekaman aksi nyata Siklus III.</p>
+                        <a href="#" class="text-teal-600 text-sm font-bold group-hover:underline italic">Lihat Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refleksi -->
+    <section id="refleksi" class="py-20 bg-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Jurnal Refleksi</h2>
+                <div class="w-12 h-1 bg-teal-500 mx-auto mt-2"></div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="p-6 bg-gray-50 rounded-xl border-l-4 border-teal-500">
+                    <h3 class="font-bold text-gray-800 mb-2">Fakta (Fact)</h3>
+                    <p class="text-sm text-gray-600">Jelaskan apa yang Anda lakukan selama 3 siklus PPL ini secara naratif.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl border-l-4 border-teal-500">
+                    <h3 class="font-bold text-gray-800 mb-2">Perasaan (Feeling)</h3>
+                    <p class="text-sm text-gray-600">Bagaimana perasaan Anda saat berhadapan langsung dengan dinamika siswa di sekolah mitra?</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl border-l-4 border-teal-500">
+                    <h3 class="font-bold text-gray-800 mb-2">Temuan (Finding)</h3>
+                    <p class="text-sm text-gray-600">Hal baru apa yang Anda temukan terkait teknik bimbingan atau karakter siswa?</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl border-l-4 border-teal-500">
+                    <h3 class="font-bold text-gray-800 mb-2">Rencana Depan (Future)</h3>
+                    <p class="text-sm text-gray-600">Langkah apa yang akan Anda ambil untuk menjadi guru BK yang lebih profesional?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Galeri Kegiatan</h2>
+                <div class="w-12 h-1 bg-teal-500 mx-auto mt-2"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-300 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=400" alt="Galeri 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-300 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&q=80&w=400" alt="Galeri 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-300 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=400" alt="Galeri 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-300 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=400" alt="Galeri 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <p class="text-xl font-bold mb-4">E-Portfolio PPG BK</p>
+            <p class="text-gray-400 text-sm mb-6 max-w-md mx-auto italic">"Membimbing dengan hati, menginspirasi dengan aksi."</p>
+            <div class="flex justify-center space-x-6 mb-8 text-teal-500">
+                <a href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube text-xl"></i></a>
+            </div>
+            <p class="text-gray-500 text-xs">&copy; 2024 Nama Lengkap Anda. Dibuat untuk pemenuhan tugas PPG BK.</p>
+        </div>
+    </footer>
+
+    <!-- Script Menu Mobile -->
+    <script>
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Menutup menu otomatis saat link diklik
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
