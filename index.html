@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Portfolio PPL PPG BK - 3 Siklus</title>
+    <title>E-Portfolio PPL PPG  Calon Guru</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -26,6 +26,7 @@
                 <!-- Menu Desktop -->
                 <div class="hidden md:flex space-x-6">
                     <a href="#profil" class="text-gray-600 hover:text-teal-600 font-medium transition">Profil</a>
+                    <a href="#pembimbing" class="text-gray-600 hover:text-teal-600 font-medium transition">Pembimbing</a>
                     <a href="#artefak" class="text-gray-600 hover:text-teal-600 font-medium transition">Artefak</a>
                     <a href="#refleksi" class="text-gray-600 hover:text-teal-600 font-medium transition">Refleksi</a>
                     <a href="#galeri" class="text-gray-600 hover:text-teal-600 font-medium transition">Galeri</a>
@@ -39,6 +40,7 @@
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden bg-white border-b border-gray-200 px-4 py-4 space-y-3 md:hidden shadow-lg">
             <a href="#profil" class="block text-gray-600 font-medium">Profil</a>
+            <a href="#pembimbing" class="block text-gray-600 font-medium">Pembimbing</a>
             <a href="#artefak" class="block text-gray-600 font-medium">Artefak</a>
             <a href="#refleksi" class="block text-gray-600 font-medium">Refleksi</a>
             <a href="#galeri" class="block text-gray-600 font-medium">Galeri</a>
@@ -63,7 +65,7 @@
                 <div class="w-12 h-1 bg-teal-500 mx-auto mt-2"></div>
             </div>
             
-            <div class="flex flex-col md:flex-row gap-10 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="flex flex-col md:flex-row gap-10 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-12">
                 <img src="photo-profil.jpeg" alt="Foto Profil" class="w-48 h-48 object-cover rounded-2xl shadow-lg">
                 
                 <div class="flex-1 text-center md:text-left">
@@ -72,20 +74,53 @@
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600">
                         <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-id-badge text-teal-500"></i>
-                            <span>NIM: 2590204950906</span>
+                            <i class="fa-solid fa-id-badge text-teal-500 w-5"></i>
+                            <span>NIM: [Masukkan NIM]</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-university text-teal-500"></i>
-                            <span>LPTK: Universitas Negeri Makassar</span>
+                            <i class="fa-solid fa-university text-teal-500 w-5"></i>
+                            <span>LPTK: Universitas [Nama]</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-school text-teal-500"></i>
-                            <span>Mitra: SMK Negeri 3 Makassar</span>
+                            <i class="fa-solid fa-school text-teal-500 w-5"></i>
+                            <span>Mitra: [Nama Sekolah]</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-envelope text-teal-500"></i>
-                            <span>Email: ikramnurqalbi1@gmail.com</span>
+                            <i class="fa-solid fa-envelope text-teal-500 w-5"></i>
+                            <span>Email: [Email Anda]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Pembimbing -->
+            <div id="pembimbing" class="pt-10">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900">Dosen Pembimbing & Guru Pamong</h2>
+                    <div class="w-10 h-1 bg-teal-500 mx-auto mt-2"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- DPL -->
+                    <div class="bg-teal-50 p-6 rounded-xl border border-teal-100 flex items-start gap-4 transition hover:shadow-md">
+                        <div class="bg-white p-3 rounded-lg shadow-sm text-teal-600 text-xl">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-teal-600 uppercase tracking-widest mb-1">Dosen Pembimbing Lapangan</h4>
+                            <p class="text-lg font-bold text-gray-800">[Nama DPL Lengkap Beserta Gelar]</p>
+                            <p class="text-sm text-gray-600 mt-1">NIDN: [Masukkan Nomor Induk]</p>
+                        </div>
+                    </div>
+                    <!-- Guru Pamong -->
+                    <div class="bg-teal-50 p-6 rounded-xl border border-teal-100 flex items-start gap-4 transition hover:shadow-md">
+                        <div class="bg-white p-3 rounded-lg shadow-sm text-teal-600 text-xl">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-teal-600 uppercase tracking-widest mb-1">Guru Pamong</h4>
+                            <p class="text-lg font-bold text-gray-800">[Nama Guru Pamong Beserta Gelar]</p>
+                            <p class="text-sm text-gray-600 mt-1">NIP: [Masukkan Nomor Induk]</p>
                         </div>
                     </div>
                 </div>
