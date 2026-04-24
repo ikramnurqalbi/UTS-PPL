@@ -20,6 +20,12 @@
         .hero-gradient {
             background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 100%);
         }
+        .img-zoom {
+            transition: transform 0.3s ease;
+        }
+        .img-zoom:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -29,7 +35,7 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="font-bold text-xl text-teal-600 flex items-center gap-2">
-                    <i class="photo-counselor"></i> Porotofolio BK
+                    <i class="fa-solid fa-user-doctor"></i> Porotofolio BK
                 </div>
                 <div class="hidden md:flex space-x-6">
                     <a href="#profil" class="text-gray-600 hover:text-teal-600 font-medium transition">Profil</a>
@@ -55,10 +61,10 @@
     <header class="hero-gradient py-12 md:py-20 text-center px-4 border-b border-gray-100">
         <div class="max-w-5xl mx-auto">
             <div class="logo-container flex flex-wrap justify-center items-center gap-6 md:gap-12 mb-10">
-                <img src="photo-pendidikan.png" alt="Logo Tut Wuri Handayani">
-                <img src="photo-unm.png" alt="Logo Universitas Negeri Makassar">
-                <img src="photo-ppg.png" alt="Logo PPG Calon Guru">
-                <img src="photo-diktisaintek.png" alt="Logo Diktisaintek">
+                <img src="Tut-Wuri-Handayani.png" alt="Logo Tut Wuri Handayani">
+                <img src="UNM.png" alt="Logo Universitas Negeri Makassar">
+                <img src="PPG-Calon-Guru.png" alt="Logo PPG Calon Guru">
+                <img src="DIKTISAINTEK-BERDAMPAS.png" alt="Logo Diktisaintek">
             </div>
 
             <span class="bg-teal-100 text-teal-700 px-4 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-sm">Program PPG Calon Guru 2026</span>
@@ -128,10 +134,12 @@
                 <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-teal-500">
                     <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Dosen Pembimbing Lapangan</h4>
                     <p class="text-lg font-bold text-gray-800">M. Amirullah, M.Pd</p>
+                    <p class="text-sm text-gray-600 mt-1">NIP. 199205152022031008</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-teal-500">
                     <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Guru Pamong</h4>
                     <p class="text-lg font-bold text-gray-800">Nasratul Khumaerah, S.Pd., Gr., M.Pd</p>
+                    <p class="text-sm text-gray-600 mt-1">NIP. 198901012022212040</p>
                 </div>
             </div>
         </div>
@@ -147,7 +155,7 @@
             </div>
 
             <!-- Siklus 1 -->
-            <div class="mb-16">
+            <div class="mb-20">
                 <div class="flex items-center gap-4 mb-8">
                     <div class="h-10 w-10 rounded-lg bg-teal-600 text-white flex items-center justify-center font-bold">I</div>
                     <h3 class="text-xl font-bold text-gray-800">Siklus I: Layanan Klasikal</h3>
@@ -167,11 +175,17 @@
                         <p class="text-xs text-gray-600 mb-4">Slide Presentasi & Materi Layanan Karir.</p>
                         <a href="#" class="text-teal-600 text-sm font-bold hover:underline italic">Lihat Berkas</a>
                     </div>
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition group">
-                        <i class="fa-solid fa-video text-4xl text-teal-500 mb-4 group-hover:scale-110 transition"></i>
-                        <h4 class="font-bold mb-2">Video Praktik</h4>
-                        <p class="text-xs text-gray-600 mb-4">Rekaman proses bimbingan klasikal di kelas.</p>
-                        <a href="#" class="text-teal-600 text-sm font-bold hover:underline italic">Tonton Video</a>
+                    <!-- Bagian Foto Praktik yang Diperbarui -->
+                    <div class="md:col-span-1 bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition group flex flex-col">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i class="fa-solid fa-camera-retro text-4xl text-teal-500 group-hover:scale-110 transition"></i>
+                            <h4 class="font-bold">Dokumentasi Praktik</h4>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-4 flex-grow">
+                            <img src="WhatsApp Image 2026-04-16 at 09.07.45.jpeg" alt="Praktik Siklus 1 - Foto 1" class="w-full h-24 object-cover rounded-lg img-zoom shadow-sm">
+                            <img src="WhatsApp Image 2026-04-16 at 09.07.45 (1).jpeg" alt="Praktik Siklus 1 - Foto 2" class="w-full h-24 object-cover rounded-lg img-zoom shadow-sm">
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2 font-medium italic">Aksi nyata layanan bimbingan klasikal di SMK Negeri 3 Makassar.</p>
                     </div>
                 </div>
             </div>
@@ -213,7 +227,6 @@
                     <h3 class="text-xl font-bold text-gray-800">Siklus III: Konseling Kelompok</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- RPL Konseling Kelompok - Tautan ke File PDF yang baru diunggah -->
                     <div class="bg-teal-50 p-6 rounded-xl border border-teal-100 hover:shadow-lg transition group">
                         <i class="fa-solid fa-file-pdf text-4xl text-red-500 mb-4 group-hover:scale-110 transition duration-300"></i>
                         <h4 class="font-bold mb-2">RPL Konseling</h4>
@@ -267,10 +280,10 @@
     <footer class="bg-gray-900 text-white py-12 px-4">
         <div class="max-w-5xl mx-auto text-center">
             <div class="flex justify-center items-center gap-6 mb-8 opacity-40 grayscale hover:grayscale-0 transition duration-500">
-                <img src="photo-pendidikan.png" alt="Logo" class="h-10">
-                <img src="photo-unm.png" alt="Logo" class="h-10">
-                <img src="photo-ppg.png" alt="Logo" class="h-10">
-                <img src="photo-diktisaintek.png" alt="Logo" class="h-10">
+                <img src="Tut-Wuri-Handayani.png" alt="Logo" class="h-10">
+                <img src="UNM.png" alt="Logo" class="h-10">
+                <img src="PPG-Calon-Guru.png" alt="Logo" class="h-10">
+                <img src="DIKTISAINTEK-BERDAMPAS.png" alt="Logo" class="h-10">
             </div>
             <p class="text-sm text-gray-400">© 2026 IKRAM NUR QALBI, S.Pd PPG Calon Guru - Universitas Negeri Makassar</p>
         </div>
